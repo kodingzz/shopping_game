@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-blue:#357FBB;
+    --color-yellow:#F9B622;
+    --color-pink:#FD7274;
+    --color-light-grey: #dfdfdf;
+    --color-white: #ffffff;
+    --color-black:#3f454d;
+    
+    --size-change: scale(1.2);
+    --size-animation-duration: 300ms ease-in;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+
+}
+
+ul{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+
+
+#shopping__container{
+  width: 600px;
+  height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    transition: transform var(--size-animation-duration);
+}
+.logo:hover{
+    transform: var(--size-change);
+}
+
+.division{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+ 
+}
+
+.btn{
+    border: none;
+    background-color: transparent;
+}
+
+.img__btn{
+    padding: 0.5rem;
+    width: 80px;
+}
+.color__btn{
+    border-radius: 5px;
+    height: 67px;
+    width: 80px;
+    font-size: 20px;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.blue{
+    background-color: var(--color-blue);
+}
+.yellow{
+    background-color: var(--color-yellow);
+
+}
+.pink{
+    background-color: var(--color-pink);
+}
+
+
+.list__items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.list__item{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    width: 600px;
+    background-color:var(--color-white);
+    border-radius: 5px;
+    padding: 10px 20px;
+    
+}
+.item__thumbnail{
+    width: 50px;
+}
+.item__description{
+    font-weight: 600;
+}
+.division li{
+    transition: transform var(--size-animation-duration);
+}
+.division li:hover
+{
+    transform: var(--size-change);
+}
